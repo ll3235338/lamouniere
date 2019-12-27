@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Clara et Alejandra</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/lesPerso/claraetalejandra/claraetalejandra.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/script.js"></script>
+  </head>  
+  <body >
+    <!-- ici c'est mon contenu html -->
+    <header></header>
+    <nav><div class="langues"><a class="fr">fr</a> <a class="es">es</a> <a class="en">en</a> </div></nav>
+    <section id="contenu">
+      chargement en cours...  
+      
+    </section>
+    <footer></footer>
+    
+    <!-- à partir d'ici ce sont les gabarits (templates) que mon JS va récupérer -->
+    <!-- en fait on les cache dans un script, on utilise l'id pour les identifier -->
+   <div class="claraetalejandra">
+     <script id="fiche-perso" type="x-tmpl-mustache" >
+        {{#clara et alejandra}}
+        <div class="ban">
+          <img class="alf1" src="{{image}}">
+          <span class="chemin">{{chemin}}<span class="chemingras">{{name}}</span></span>
+          <img class="icone" src="{{icone}}">
+      </div>
+      
+          <div class="bloc">
+                  <a href="javascript:PopupImage('{{carte}}')"><img class="carte" src="{{carte}}"></a>
+          
+                  <h1 class="titre">{{titre}}</h1>
+                  <span class="info">{{info1}}<br>{{info2}}</span>
+          
+                  <span class="titre2">{{titre2}}</span>
+          
+                  <span class="date">{{date}}</span>
+          
+                  <p class="txt">{{description}}</p>
+
+
+                  <div class="lecteur">
+                    <img src="{{img1}}" width="200" height="400" name="image">
+                    <span class="intitulelecteur">{{intitulelecteur}}</span> 
+                    <div name="vision">
+                      <a onClick="suivante()"><img class="vignette" src="{{imgicone1}}" width="70" height="70"></a>
+                      <a onClick="suivante2()"><img class="vignette" src="{{imgicone2}}" width="70" height="70"></a>
+                      <a onClick="suivante3()"><img class="vignette" src="{{imgicone3}}" width="70" height="70"></a>
+                      <a onClick="suivante4()"><img class="vignette" src="{{imgicone4}}" width="70" height="70"></a>
+                    </div>
+                    <a href=""><img class="bouton" src="{{bouton}}"></a>
+                  </div>         
+
+          </div>
+        {{/clara et alejandra}}
+      </script> 
+   </div>
+    
+      
+  </body>
+</html>

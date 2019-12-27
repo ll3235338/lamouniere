@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Le camp</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/demo.js"></script>
+  </head>  
+  <body >
+    <!-- ici c'est mon contenu html -->
+    <header></header>
+    <nav><div class="langues"><a class="fr">fr</a> <a class="es">es</a> <a class="en">en</a> </div></nav>
+    <section id="contenu">
+      chargement en cours...  
+      
+    </section>
+    <footer></footer>
+    
+    <!-- à partir d'ici ce sont les gabarits (templates) que mon JS va récupérer -->
+    <!-- en fait on les cache dans un script, on utilise l'id pour les identifier -->
+   <div class="Angel">
+     <script id="fiche-perso" type="x-tmpl-mustache" >
+        {{#LeCamp}}
+        <h2>{{name}}</h2>
+        <p>{{description}}</p>
+        <img src={{image}}>
+        <audio
+          controls
+          src="{{audio}}">
+        </audio>
+        {{/LeCamp}}
+      </script> 
+   </div>
+    
+      
+  </body>
+</html>

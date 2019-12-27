@@ -1,0 +1,168 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.lecteur {
+  width: 300px;
+  height: 310px;
+  margin-top: 30px;
+  text-align:center;
+  margin: 0 auto;
+}
+
+.vignette {
+  opacity: 0.7;
+}.vignette:hover {
+  opacity: 1;
+}
+
+.intitulelecteur {
+  font-family: calibri;
+  color: grey;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.bouton {
+  margin-top: 20px;
+  width: 300px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.ban {
+  position: relative;
+  /* top: -20px; */
+  left: 0;
+  right: 0;
+  height: 145px;
+  z-index: -1;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-image:url(/img/ICONOGRAPHIE/Alfonso/15IMG01a_HDR01_Alf.jpg);
+}
+
+nav {
+  top: 10px;
+  left: 20px;
+  position: absolute;
+  font-family: calibri;
+  font-size: 14px;
+}
+  
+.alf1 {
+  width: 150px;
+  position:absolute;
+  bottom: 0;
+}
+.icone {
+  position: absolute;
+  width: 30px;
+  top: 30px;
+  left: 20px;
+}
+.carte {
+  width: 90px;
+  margin-left: 40px;
+  margin-top: 27px;
+}
+.bloc {
+  background-color: #ffffff;
+  padding-bottom:20px;
+}
+.txt {
+  font-size:18px;
+  margin-right:40px;
+  margin-left:40px;
+  margin-top:20px;
+  text-align: justify;
+  font-style: italic;
+  font-family: calibri;
+}
+.titre {
+  position:absolute;
+  float: right;
+  font-family: calibri;
+  font-size: 20px;
+  margin-top: -85px;
+  margin-left: 160px;
+}
+.titre2 {
+  display: block;
+  font-family: calibri;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.info {
+  display: block;
+  font-size: 14px;
+  font-family: calibri;
+  margin-top: -55px;
+  position:absolute; 
+  margin-left: 160px;
+}
+.date {
+  display: block;
+  font-size:20px;
+  margin-left: 40px;
+  margin-top: 20px;
+  font-style: italic;
+}
+.chemin {
+  display: block;
+  float: right;
+  right: 20px;
+  top: 10px;
+  position: absolute;
+  font-family: calibri;
+  font-size: 14px;
+}
+.chemingras {
+  font-weight: bold;
+}
+
+/* responsive */
+@media screen and (min-width:320px){
+  .ban{ height: 145px; }  
+  .alf1{ width: 120px; } 
+}@media screen and (min-width:345px){
+  .ban{ height: 165px; }  
+  .alf1{ width: 120px; } 
+}@media screen and (min-width:390px){
+  .ban{ height: 185px; }  
+  .alf1{ width: 130px; } 
+  .icone{ width: 40px; }
+}@media screen and (min-width:425px){
+  .ban{ height: 205px; }  
+  .icone{ width: 50px; } 
+}@media screen and (min-width:480px){
+  .ban{ height: 225px; }
+}@media screen and (min-width:530px){
+  .ban{ height: 245px; }  
+  .alf1{ width: 200px; }     
+}@media screen and (min-width:575px){
+  .ban{ height: 265px; } 
+  .alf1{ width: 200px; }
+}@media screen and (min-width:620px){
+  .ban{ height: 265px; background-image:url(/img/ICONOGRAPHIE/Alfonso/15IMG01b_HDR02_Alf.jpg); }  
+}@media screen and (min-width:810px){
+  .ban{ height: 285px; }  
+}@media screen and (min-width:880px){
+  .ban{ height: 305px; }  
+}@media screen and (min-width:945px){
+  .ban{ height: 325px; }  
+}@media screen and (min-width:1000px){
+  .ban{ height: 450px; }  
+}@media screen and (min-width:1385px){
+  .ban{ height: 500px; }  
+}
+  
+  
